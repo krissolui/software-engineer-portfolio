@@ -1,6 +1,5 @@
 export const GITHUB_PROFILE = 'https://github.com/krissolui';
-export const LINKEDIN_PROFILE =
-	'https://www.linkedin.com/in/kris-lui-8b8888159';
+export const LINKEDIN_PROFILE = 'https://www.linkedin.com/in/kris-lui';
 export const EMAIL = process.env.GATSBY_EMAIL ?? '';
 export const EMAIL_PUBLIC_KEY = process.env.GATSBY_EMAIL_PUBLIC_KEY ?? '';
 export const EMAIL_SERVICE_ID = process.env.GATSBY_EMAIL_SERVICE_ID ?? '';
