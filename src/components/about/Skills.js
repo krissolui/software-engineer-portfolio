@@ -43,7 +43,7 @@ import Skill from '../skills/Skill';
 function Skills() {
 	const animation = useAnimation();
 	const { ref, inView } = useInView({
-		threshold: 0.5,
+		threshold: 0.2,
 	});
 
 	useEffect(() => {
@@ -63,7 +63,7 @@ function Skills() {
 			},
 		},
 		hidden: {
-			y: '5vw',
+			y: 50,
 			opacity: 0,
 		},
 	};
@@ -98,7 +98,7 @@ function Skills() {
 			</div>
 			<div className="flex flex-col w-full text-center space-y-24 lg:flex-row space-y-12 lg:space-y-0 lg:space-x-12 lg:divide-x divide-opacity-30 divide-graphite text-center justify-between">
 				<motion.div
-					className="w-full lg:w-1/2"
+					className="w-full"
 					initial="hidden"
 					animate={animation}
 					variants={header}
@@ -132,8 +132,9 @@ function Skills() {
 						<Skill img={css} name=" CSS3" />
 					</motion.ul>
 				</motion.div>
+
 				<motion.div
-					className="w-full lg:w-1/2"
+					className="w-full"
 					initial="hidden"
 					animate={animation}
 					variants={header}

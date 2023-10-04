@@ -7,6 +7,10 @@
 		@apply transform hover:-translate-y-2 ease-in-out duration-200;
 	}
 }
+html,
+body {
+	overflow-x: hidden;
+}
 
 html.has-scroll-smooth {
 	overflow: hidden;
