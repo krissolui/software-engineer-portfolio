@@ -66,21 +66,24 @@ const Projects = () => {
 							alt="Personal portfolio project"
 						/>
 						<ProjectCard
-							name={'Overmind Web3 Projects'}
+							name={'Overmind Web3'}
 							tags={[
 								'Aptos',
+								'Move',
 								'TypeScript',
 								'Next.js',
 								'Web3',
 								'Blockchain',
+								'Smart Contracts',
 								'NFTs',
 								'DeFi',
+								'Gaming',
 							]}
 							github={'https://github.com/krissolui'}
 							liveDemo={'https://overmind.xyz/@krissolui'}
 							alt={'Image of Overmind profile'}
 							description={
-								'Compete with 4000+ blockchain developers in developing Aptos Move smart contracts and frontend decentralized applications (dApps). Ranked at the top 1%.'
+								'Ranked at the top 1% among 4000+ blockchain developers. Compete in developing Aptos Move smart contracts and frontend decentralized applications (dApps).'
 							}
 						/>
 					</motion.div>
@@ -101,7 +104,7 @@ const Projects = () => {
 							tags={[
 								'TypeScript',
 								'Next.js',
-								'REST APIs',
+								'RESTful APIs',
 								'Serverless',
 								'CDN',
 							]}
