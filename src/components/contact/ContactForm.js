@@ -43,6 +43,7 @@ function ContactForm() {
 						type="text"
 						name="name"
 						placeholder="Your name"
+						autoComplete="name"
 						required
 						className="bg-light-green border-2 w-1/2 h-full rounded"
 					/>
@@ -50,6 +51,7 @@ function ContactForm() {
 						type="email"
 						name="email"
 						placeholder="Your email"
+						autoComplete="email"
 						required
 						className="bg-light-green w-1/2 h-full rounded"
 					/>
@@ -58,11 +60,13 @@ function ContactForm() {
 					type="text"
 					name="subject"
 					placeholder="Subject"
+					autoComplete="off"
 					className="bg-light-green rounded"
 				/>
 				<textarea
 					name="message"
 					placeholder="Your message..."
+					autoComplete="off"
 					required
 					className="bg-light-green h-2/3 rounded"
 				/>
