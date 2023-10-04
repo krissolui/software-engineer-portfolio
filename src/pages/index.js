@@ -5,7 +5,7 @@ import About from '../components/about/About';
 import Projects from '../components/projects/Projects';
 import Contact from '../components/contact/Contact';
 import LocomotiveScroll from 'locomotive-scroll';
-import Experience from '../components/experience/Experience';
+// import Experience from '../components/experience/Experience';
 
 const IndexPage = () => {
 	const scrollRef = useRef();

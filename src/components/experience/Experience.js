@@ -1,7 +1,7 @@
 import { motion, useAnimation } from 'framer-motion';
 import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { navigate } from '@reach/router';
+// import { navigate } from '@reach/router';
 
 const Experience = () => {
 	const animation = useAnimation();
