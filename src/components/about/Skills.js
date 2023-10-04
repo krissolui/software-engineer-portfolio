@@ -38,6 +38,7 @@ import {
 	sql,
 	vercel,
 } from '../../images/icons';
+import Skill from '../skills/Skill';
 
 function Skills() {
 	const animation = useAnimation();
@@ -63,18 +64,6 @@ function Skills() {
 		},
 		hidden: {
 			y: '5vw',
-			opacity: 0,
-		},
-	};
-
-	const icons = {
-		visible: {
-			opacity: 1,
-			transition: {
-				duration: 1,
-			},
-		},
-		hidden: {
 			opacity: 0,
 		},
 	};
@@ -107,7 +96,6 @@ function Skills() {
 					Golang and MongoDB.
 				</motion.p>
 			</div>
-
 			<div className="flex flex-col w-full text-center space-y-24 lg:flex-row space-y-12 lg:space-y-0 lg:space-x-12 lg:divide-x divide-opacity-30 divide-graphite text-center justify-between">
 				<motion.div
 					className="w-full lg:w-1/2"
@@ -123,59 +111,25 @@ function Skills() {
 					</motion.h2>
 					<motion.ul
 						variants={header}
-						className="grid grid-rows-2 grid-cols-3 gap-y-16 justify-items-center font-body text-sm pt-14"
+						className="grid grid-cols-2 sm:grid-cols-3 gap-y-8 sm:gap-y-16 justify-items-center font-body text-sm pt-14"
 					>
-						<motion.li variants={icons} className="icon">
-							{javascript}JavaScript
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{typescript}TypeScript
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{nodejs}Node.js
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{react}React
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{nextjs}Next.js
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{golang}Golang
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{java}Java
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{rust}Rust
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{sql}SQL
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{bash}Bash
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{solidity}Solidity
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{mocha}Mocha
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{tailwind}Tailwind
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{materialui}Material UI
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{sass}Sass
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{html} HTML5
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{css} CSS3
-						</motion.li>
+						<Skill img={javascript} name="JavaScript" />
+						<Skill img={typescript} name="TypeScript" />
+						<Skill img={nodejs} name="Node.js" />
+						<Skill img={react} name="React" />
+						<Skill img={nextjs} name="Next.js" />
+						<Skill img={golang} name="Golang" />
+						<Skill img={java} name="Java" />
+						<Skill img={rust} name="Rust" />
+						<Skill img={sql} name="SQL" />
+						<Skill img={bash} name="Bash" />
+						<Skill img={solidity} name="Solidity" />
+						<Skill img={mocha} name="Mocha" />
+						<Skill img={tailwind} name="Tailwind" />
+						<Skill img={materialui} name="Material UI" />
+						<Skill img={sass} name="Sass" />
+						<Skill img={html} name=" HTML5" />
+						<Skill img={css} name=" CSS3" />
 					</motion.ul>
 				</motion.div>
 				<motion.div
@@ -192,62 +146,26 @@ function Skills() {
 					</motion.h2>
 					<motion.ul
 						variants={header}
-						className="grid grid-rows-2 grid-cols-3 gap-y-16 justify-items-center font-body text-sm pt-14"
+						className="grid grid-cols-2 sm:grid-cols-3 gap-y-8 sm:gap-y-16 justify-items-center font-body text-sm pt-14"
 					>
-						<motion.li variants={icons} className="icon">
-							{linux}Linux
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{git}Git
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{aws}AWS
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{docker}Docker
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{npm}npm
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{yarn}Yarn
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{postman}Postman
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{postgres}PostgreSQL
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{mysql}MySQL
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{mongodb}MongoDB
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{vercel}Vercel
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{netlify}Netlify
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{terraform}Terraform
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{ansible}Ansible
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{swagger}Swagger
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{gitbook}GitBook
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{jira}JIRA
-						</motion.li>
-						<motion.li variants={icons} className="icon">
-							{slack}Slack
-						</motion.li>
+						<Skill img={linux} name="Linux" />
+						<Skill img={git} name="Git" />
+						<Skill img={aws} name="AWS" />
+						<Skill img={docker} name="Docker" />
+						<Skill img={npm} name="npm" />
+						<Skill img={yarn} name="Yarn" />
+						<Skill img={postman} name="Postman" />
+						<Skill img={postgres} name="PostgreSQL" />
+						<Skill img={mysql} name="MySQL" />
+						<Skill img={mongodb} name="MongoDB" />
+						<Skill img={vercel} name="Vercel" />
+						<Skill img={netlify} name="Netlify" />
+						<Skill img={terraform} name="Terraform" />
+						<Skill img={ansible} name="Ansible" />
+						<Skill img={swagger} name="Swagger" />
+						<Skill img={gitbook} name="GitBook" />
+						<Skill img={jira} name="JIRA" />
+						<Skill img={slack} name="Slack" />
 					</motion.ul>
 				</motion.div>
 			</div>
