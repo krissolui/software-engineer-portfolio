@@ -7,6 +7,7 @@ function ProjectCard(prop) {
 		<li
 			className="px-2 py-1 text-sm border bg-gray-300 bg-opacity-60 border-graphite border-opacity-20 rounded-full cursor-default align-middle
             transition transform duration-400 ease-in-out hover:scale-110"
+			key={tag}
 		>
 			{tag}
 		</li>
