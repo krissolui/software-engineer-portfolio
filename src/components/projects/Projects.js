@@ -3,6 +3,7 @@ import ProjectCard from './ProjectCard';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { StaticImage } from 'gatsby-plugin-image';
+import { GITHUB_PROFILE } from '../../utils/constants';
 
 const Projects = () => {
 	const animation = useAnimation();
@@ -79,7 +80,7 @@ const Projects = () => {
 								'DeFi',
 								'Gaming',
 							]}
-							github={'https://github.com/krissolui'}
+							github={GITHUB_PROFILE}
 							liveDemo={'https://overmind.xyz/@krissolui'}
 							alt={'Image of Overmind profile'}
 							description={
@@ -111,9 +112,7 @@ const Projects = () => {
 							liveDemo={
 								'https://discover-coffee-stores.krissolui.com/'
 							}
-							github={
-								'https://github.com/krissolui/discover-coffee-stores'
-							}
+							github={`${GITHUB_PROFILE}/discover-coffee-stores`}
 							alt={
 								'Screenshot of Coffee Connoisseur, a community coffee stores voting web application'
 							}

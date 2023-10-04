@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Nav from '../nav/Nav';
-import { EMAIL } from '../../utils/constants';
+import { EMAIL, GITHUB_PROFILE, LINKEDIN_PROFILE } from '../../utils/constants';
 import NET from 'vanta/dist/vanta.net.min';
 import { motion } from 'framer-motion';
 import * as THREE from 'three';
@@ -139,7 +139,7 @@ const Hero = () => {
 						className="bg-gray-200 m-auto p-2 rounded-full transform transition hover:scale-125 active:scale-95"
 					>
 						<a
-							href="https://github.com/krissolui"
+							href={GITHUB_PROFILE}
 							target="_blank"
 							rel="noopener noreferrer"
 						>
@@ -155,7 +155,7 @@ const Hero = () => {
 						className="bg-blue-200 m-auto p-2 rounded-full transform transition duration:200 hover:scale-125 active:scale-95"
 					>
 						<a
-							href="https://www.linkedin.com/in/kris-lui-8b8888159/"
+							href={LINKEDIN_PROFILE}
 							target="_blank"
 							rel="noopener noreferrer"
 						>

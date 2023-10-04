@@ -2,7 +2,12 @@ import React, { useEffect } from 'react';
 import ContactForm from './ContactForm';
 import linkedIn from '../../images/linkedin.svg';
 import github from '../../images/github.svg';
-import { EMAIL, RESUME_URL } from '../../utils/constants';
+import {
+	EMAIL,
+	GITHUB_PROFILE,
+	LINKEDIN_PROFILE,
+	RESUME_URL,
+} from '../../utils/constants';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { navigate } from '@reach/router';
@@ -82,7 +87,7 @@ const Contact = () => {
 								<p>Or find me here</p>
 								<div className="flex justify-center md:justify-start space-x-2">
 									<a
-										href={`mailto:${EMAIL}`}
+										href={GITHUB_PROFILE}
 										target="_blank"
 										rel="noopener noreferrer"
 									>
@@ -93,7 +98,7 @@ const Contact = () => {
 										/>
 									</a>
 									<a
-										href="https://www.linkedin.com/in/kris-lui-8b8888159/"
+										href={LINKEDIN_PROFILE}
 										target="_blank"
 										rel="noopener noreferrer"
 									>
