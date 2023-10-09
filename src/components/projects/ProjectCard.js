@@ -13,7 +13,7 @@ function ProjectCard(prop) {
 		</li>
 	));
 	return (
-		<div className="relative p-4 font-body flex-col space-y-4 justify-center h-full w-full">
+		<div className="relative p-4 font-display flex-col space-y-4 justify-center h-full w-full">
 			<p className="tracking-wider text-3xl">{prop.name}</p>
 			<div className="md:absolute md:top-2 md:right-1 flex space-x-2 justify-center">
 				<a

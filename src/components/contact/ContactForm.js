@@ -73,7 +73,7 @@ function ContactForm() {
 				<input
 					type="submit"
 					value="Send Message"
-					className="bg-light-green text-center p-4 font-body cursor-pointer rounded hover:scale-105 hover:tracking-wider active:scale-95 transform duration-200"
+					className="bg-light-green text-center p-4 font-display cursor-pointer rounded hover:scale-105 hover:tracking-wider active:scale-95 transform duration-200"
 				/>
 			</form>
 			<Modal showModal={showModal} setShowModal={setShowModal} />

@@ -86,7 +86,7 @@ function Skills() {
 					initial="hidden"
 					animate={animation}
 					variants={header}
-					className="font-body lg:text-lg leading-loose lg:leading-loose lg:w-3/4"
+					className="font-display font-display lg:text-lg leading-loose lg:leading-loose lg:w-3/4"
 				>
 					Experienced in building backend APIs in TypeScript, Node.js,
 					Express.js and PostgreSQL, as well as modern web
@@ -111,7 +111,7 @@ function Skills() {
 					</motion.h2>
 					<motion.ul
 						variants={header}
-						className="grid grid-cols-2 sm:grid-cols-3 gap-y-8 sm:gap-y-16 justify-items-center font-body text-sm pt-14"
+						className="grid grid-cols-2 sm:grid-cols-3 gap-y-8 sm:gap-y-16 justify-items-center font-display text-sm pt-14"
 					>
 						<Skill img={javascript} name="JavaScript" />
 						<Skill img={typescript} name="TypeScript" />
@@ -147,7 +147,7 @@ function Skills() {
 					</motion.h2>
 					<motion.ul
 						variants={header}
-						className="grid grid-cols-2 sm:grid-cols-3 gap-y-8 sm:gap-y-16 justify-items-center font-body text-sm pt-14"
+						className="grid grid-cols-2 sm:grid-cols-3 gap-y-8 sm:gap-y-16 justify-items-center font-display text-sm pt-14"
 					>
 						<Skill img={linux} name="Linux" />
 						<Skill img={git} name="Git" />
