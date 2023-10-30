@@ -84,10 +84,39 @@ const Projects = () => {
 							liveDemo={'https://overmind.xyz/@krissolui'}
 							alt={'Image of Overmind profile'}
 							description={
-								'Ranked at the top 1% among 4000+ blockchain developers. Compete in developing Aptos Move smart contracts and frontend decentralized applications (dApps).'
+								'Ranked at the top 1% among 6000+ blockchain developers. Compete in developing Aptos Move smart contracts and frontend decentralized applications (dApps).'
 							}
 						/>
 					</motion.div>
+					<div
+						data-scroll
+						data-scroll-delay=".1"
+						data-scroll-speed="5"
+					>
+						<StaticImage
+							className="mb-4"
+							src={'../../images/screenShots/charity-finder.png'}
+							alt="Personal portfolio project"
+						/>
+						<ProjectCard
+							name={'Charity Finder'}
+							tags={[
+								'TypeScript',
+								'React.js',
+								'RESTful APIs',
+								'Tailwind CSS',
+								'Styled-Components',
+							]}
+							liveDemo={'https://charity-finder.krissolui.com/'}
+							github={`${GITHUB_PROFILE}/charity-finder`}
+							alt={
+								'Screenshot of Charity Finder, a place to find charities to support. Build a better world together.'
+							}
+							description={
+								'A web application for user to find charities based on causes.'
+							}
+						/>
+					</div>
 					<div
 						data-scroll
 						data-scroll-delay=".1"
