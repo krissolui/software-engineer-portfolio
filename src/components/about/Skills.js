@@ -38,6 +38,7 @@ import {
 	sql,
 	vercel,
 } from '../../images/icons';
+import python from '../../images/python.svg';
 import Skill from '../skills/Skill';
 
 function Skills() {
@@ -118,6 +119,10 @@ function Skills() {
 						<Skill img={nodejs} name="Node.js" />
 						<Skill img={react} name="React" />
 						<Skill img={nextjs} name="Next.js" />
+						<Skill
+							img={<img src={python} height={48} width={48} />}
+							name="Python"
+						/>
 						<Skill img={golang} name="Golang" />
 						<Skill img={java} name="Java" />
 						<Skill img={rust} name="Rust" />
